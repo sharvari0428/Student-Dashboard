@@ -40,3 +40,11 @@ img{
     height:120px;
     border-radius:50%;
 }
+.card{
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
