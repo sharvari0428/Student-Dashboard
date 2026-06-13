@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>🎓 Student Dashboard</h1>
+
+    <!-- Student Profile -->
+    <div class="card">
+        <h2>Student Profile</h2>
+        <p>Name: Sharvari</p>
+        <p>Course: SYCM-I</p>
+    </div>
+
+    <!-- Attendance Tracker -->
+    <div class="card">
+        <h2>Attendance Tracker</h2>
+
+        <input type="number" id="attended" placeholder="Classes Attended">
+        <input type="number" id="total" placeholder="Total Classes">
+
+        <button onclick="calculateAttendance()">
+            Calculate Attendance
+        </button>
+
+        <p id="result"></p>
+    </div>
+
+    <!-- Assignment Tracker -->
+    <div class="card">
+        <h2>Assignment Tracker</h2>
+
+        <input type="text" id="task" placeholder="Enter Assignment">
+
+        <button onclick="addTask()">
+            Add Assignment
+        </button>
+
+        <ul id="list"></ul>
+    </div>
+
+    <!-- Exam Countdown -->
+    <div class="card">
+        <h2>Exam Countdown</h2>
+
+        <input type="date" id="examDate">
+
+        <button onclick="countdown()">
+            Check Days Left
+        </button>
+
+        <p id="days"></p>
+    </div>
+
+    <!-- CGPA Calculator -->
+    <div class="card">
+        <h2>CGPA Calculator</h2>
+
+        <input type="number" id="cgpa" step="0.1" placeholder="Enter CGPA">
+
+        <button onclick="convert()">
+            Calculate Percentage
+        </button>
+
+        <p id="percentage"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
